@@ -1,0 +1,30 @@
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of events">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <!-- <video width="320" height="240" controls muted>
+          <source src="assets/mockvideo.mp4">
+           </video> -->
+
+           <img [src]="outimg" width="320px" height="240px" />
+
+        <!-- <iframe [src]= 'safeurl | safe'></iframe>  -->
+        <p class="card-text">{{event.description}}</p>
+        <!-- <a href="#" class="btn btn-primary">Review</a>
+        <a href="#" class="btn btn-primary">Resume</a> -->
+        <!-- <input type="button" class="button4" style="background-color:#45a3aa" value="Review"/>
+        <input type="button" class="button4" style="background-color:#45a3aa" value="Resume"/> -->
+        <button (click)="freeze()" class="button4" style="background-color:#45a3aa">
+          Review
+        </button>
+        <button (click)="unfreeze()" class="button4" style="background-color:#45a3aa">
+          Resume
+        </button>
+      </div>
+      <div class="card-footer text-muted">
+        {{event.date | date:'shortDate'}} 
+      </div>
+    </div>
+  </div> 
+</div> 

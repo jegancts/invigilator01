@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="leftBox">
+    <div class="content">
+      <div>
+      <img src="assets/images/hog.png" style="padding-left:280px;width:540px;height:220px;">
+      </div>
+      <div style="padding-bottom:50px;"></div>
+      <span class="header"><b>Ministry of Magic</b><br>Invigilator Portal</span>
+      <p>This is the invigilators of the Ministry of Magics access platform to analyse and review past and preset examinations.</p>
+      <p>This is the invigilators of the Ministry of Magics access platform to analyse and review past and preset examinations.</p>
+      <div class="btns">
+        <input type="button" id="learn" value="Contact"/>
+        <input type="button" id="about" value="About"/>
+      </div>
+    </div>
+  </div>
+  <div class="rightBox">
+    <form id="login-form">
+      <header style="color:#212529;">Log In</header>
+      <input type="text" class="bt" id="email" name="email" placeholder="Email"/>
+      <input type="password" class="bt" id="password" name="password" placeholder="Password"/>
+      <div class="check">
+        <label id="check_rem"><input type="checkbox" id="rem"/> <span style="color: #9500FF;"><b> Remember me</b></span> me on this computer</label>
+      </div>
+      <input type="button" (click)="loginUser()" class="wyslij" value="Sign In"/>
+    </form>
+  </div>
+</div>
+
