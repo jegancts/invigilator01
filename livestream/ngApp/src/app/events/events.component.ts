@@ -15,7 +15,7 @@ export class EventsComponent implements OnInit  {
   public outimg : string = '';
 
   events = []
-
+  public res: any;
 
   public ngOnInit(): void { 
     this.socket.on('image_out', (message) => {
@@ -28,10 +28,12 @@ export class EventsComponent implements OnInit  {
     
     this._eventService.getEvents()
       .subscribe(
-        res => this.events = res,
+        res => this.events = res, 
         err => console.log(err)
+        
       )
-
+      console.log("events loading"); 
+      console.log(this.res);
   }
   
 public freeze(): void{

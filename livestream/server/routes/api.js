@@ -35,39 +35,39 @@ router.get('/events', (req,res) => {
     {
       "_id": "1",
       "name": "Jack",
+      "videopath" : "assets/images/image1.png",
       "description": "Economics Admissions Assessment",
       "date": "2020-07-13T18:25:43.511Z"
     },
     {
       "_id": "2",
       "name": "Robert",
+      "videopath" : "assets/images/image1.png",
       "description": "Engineering Admissions Assessment",
       "date": "2020-07-13T18:25:43.511Z"
     },
     {
       "_id": "3",
       "name": "John",
+      "videopath" : "assets/images/image1.png",
       "description": "Cambridge Test of Mathematics",
       "date": "2020-07-13T18:25:43.511Z"
     },
     {
       "_id": "4",
       "name": "	James",
+      "videopath" : "assets/images/image1.png",
       "description": "Economics Admissions Assessment",
       "date": "2020-07-13T18:25:43.511Z"
     },
     {
       "_id": "5",
       "name": "Leo",
+      "videopath" : "assets/images/image1.png",
       "description": "Physics online assessment",
       "date": "2020-07-13T18:25:43.511Z"
-    },
-    {
-      "_id": "6",
-      "name": "Oliver",
-      "description": "Engineering Admissions Assessment",
-      "date": "2020-07-13T18:25:43.511Z"
     }
+   
   ]
   res.json(events)
 })
